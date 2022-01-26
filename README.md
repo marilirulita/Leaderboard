@@ -1,73 +1,58 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
-
+# Leaderboard
+Leaderboard list app that displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Java Script
+- Webpack
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Run this command in your OS terminal to get a copy of the project:
 
+  ```
+  git@github.com:marilirulita/Leaderboard.git
+  ```
 
-To get a local copy up and running follow these simple example steps.
+- Open the folder project from your code editor.
 
-### Prerequisites
+- Run:
+
+  ```
+  npm install
+  ```
+  
+- From the root folder run start command to see the project on browser: 
+
+  ```
+  npm start
+  ```
 
 ### Setup
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+* Clone the repository in order to get a copy of this project
 
 ## Authors
 
-👤 **Author1**
+#### Mar Bautista
+GitHub: [marilirulita](https://github.com/marilirulita)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+LinkedIn: [mar bautista](https://www.linkedin.com/in/marbautista/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Twitter: [@marylirulita](https://twitter.com/marylirulita)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/marilirulita/Leaderboard/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](LICENSE) licensed.

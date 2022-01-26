@@ -116,7 +116,17 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _score_display_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./score-display.js */ \"./src/score-display.js\");\n\n\n\n(0,_score_display_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/score-display.js":
+/*!******************************!*\
+  !*** ./src/score-display.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ displayScores)\n/* harmony export */ });\nconst scores = [\n  { name: 'Name', score: 100 },\n  { name: 'Name', score: 50 },\n  { name: 'Name', score: 20 },\n  { name: 'Name', score: 78 },\n  { name: 'Name', score: 43 },\n];\n\nconst board = document.getElementById('scores');\n\nconst displayScores = () => {\n  scores.forEach((scr) => {\n    const item = document.createElement('li');\n    item.innerHTML = `<p>${scr.name}: ${scr.score}</p>`;\n    board.appendChild(item);\n  });\n};\n\n\n\n//# sourceURL=webpack://leaderboard/./src/score-display.js?");
 
 /***/ })
 
