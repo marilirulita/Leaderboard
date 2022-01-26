@@ -1,7 +1,67 @@
 body {
-  background-color: bisque;
+  display: flex;
+  justify-content: center;
 }
 
-.hello {
-  color: red;
+h1 {
+  width: auto;
+  text-align: justify;
+  margin: 0;
+}
+
+h2, ul, p {
+  margin: 0;
+  padding: 0px;
+}
+
+ul, input {
+  border: 1.5px solid black;
+  margin: 5px 0;
+}
+
+li {
+  list-style: none;
+  padding: 2px 3px;
+}
+
+li:nth-child(even) {
+  background-color: silver;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.main-board {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0px 30px;
+}
+
+#display-scores,
+#add-score {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+}
+
+#displa-score-title {
+  display: flex;
+}
+
+#displa-score-title h2,
+#displa-score-title input,
+#add-score h2,
+#add-score input {
+  margin: 5px;
+}
+
+#submit {
+  width: min-content;
+  align-self: flex-end;
+  height: 31px;
 }
