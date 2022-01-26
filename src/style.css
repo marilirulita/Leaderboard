@@ -9,12 +9,15 @@ h1 {
   margin: 0;
 }
 
-h2, ul, p {
+h2,
+ul,
+p {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
-ul, input {
+ul,
+input {
   border: 1.5px solid black;
   margin: 5px 0;
 }
@@ -38,7 +41,7 @@ li:nth-child(even) {
   display: flex;
   align-content: center;
   justify-content: center;
-  padding: 0px 30px;
+  padding: 0 30px;
 }
 
 #display-scores,
