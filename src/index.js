@@ -1,4 +1,10 @@
 import './style.css';
-import displayScores from './score-display.js';
+import getAllScores from './score-display.js';
 
-displayScores();
+const refresh = document.getElementById('refresh');
+refresh.addEventListener('click', () => {getAllScores()});
+
+
+// window.onload {
+//   getAllScores();
+// };
