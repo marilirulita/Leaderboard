@@ -1,19 +1,22 @@
-const scores = [
-  { name: 'Name', score: 100 },
-  { name: 'Name', score: 50 },
-  { name: 'Name', score: 20 },
-  { name: 'Name', score: 78 },
-  { name: 'Name', score: 43 },
-];
+const displayScores = (obj) => {
+  const board = document.getElementById('scores');
+  board.innerHTML = '';
+  const playersInfo = obj.result;
 
-const board = document.getElementById('scores');
-
-const displayScores = () => {
-  scores.forEach((scr) => {
+  playersInfo.forEach((player) => {
     const item = document.createElement('li');
-    item.innerHTML = `<p>${scr.name}: ${scr.score}</p>`;
+    item.innerHTML = `<p>${player.user}: ${player.score}</p>`;
     board.appendChild(item);
   });
 };
 
-export { displayScores as default };
+const getAllScores = async () => {
+  const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0CasFsHb7LOJqeFKBD5E/scores/';
+  const request = new Request(requestURL);
+  const response = await fetch(request);
+  const players = await response.json();
+
+  displayScores(players);
+};
+
+export { getAllScores as default };
