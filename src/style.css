@@ -1,25 +1,57 @@
 body {
   display: flex;
   justify-content: center;
+  font-family: "Brush Script MT", cursive;
 }
 
 h1 {
   width: auto;
   text-align: justify;
   margin: 0;
+  background-color: #d32f2f;
+  color: #fff;
+  border-radius: 7px;
+  padding: 5px 10px;
 }
 
-h2,
-ul,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
 p {
   margin: 0;
   padding: 0;
+  color: #212121;
 }
 
-ul,
 input {
-  border: 1.5px solid black;
+  border: 1.5px solid #bdbdbd;
   margin: 5px 0;
+  background-color: #757575;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 7px;
+  font-family: "Brush Script MT", cursive;
+}
+
+input::placeholder {
+  color: #757575;
+}
+
+input:focus {
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 7px;
+  overflow-y: scroll;
+  height: 250px;
+  background: #ffcdd2;
 }
 
 li {
@@ -28,7 +60,7 @@ li {
 }
 
 li:nth-child(even) {
-  background-color: silver;
+  background-color: #bdbdbd;
 }
 
 .main {
@@ -42,6 +74,8 @@ li:nth-child(even) {
   align-content: center;
   justify-content: center;
   padding: 0 30px;
+  background: #f44336;
+  border-radius: 7px;
 }
 
 #display-scores,
@@ -66,5 +100,33 @@ li:nth-child(even) {
 #submit {
   width: min-content;
   align-self: flex-end;
-  height: 31px;
+  height: 35px;
+}
+
+.light-primary-color {
+  background: #ffcdd2;
+  color: #212121;
+}
+
+.font-awsome {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px #757575;
+  margin: 0 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+
+  .main-board {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-board {
+    flex-direction: column;
+  }
 }

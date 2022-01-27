@@ -15,4 +15,15 @@ const newScore = async (name, scr) => {
   await fetch(request, method);
 };
 
-export { newScore as default };
+const addNewScore = () => {
+  const inputName = document.getElementById('input-name');
+  const inputScore = document.getElementById('input-score');
+
+  if (inputName.value !== '' && inputScore.value !== '') {
+    newScore(inputName.value, inputScore.value);
+    inputName.value = '';
+    inputScore.value = '';
+  }
+};
+
+export { addNewScore as default };
