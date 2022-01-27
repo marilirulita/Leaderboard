@@ -8,7 +8,6 @@ refresh.addEventListener('click', () => {getAllScores()});
 const inputName = document.getElementById('input-name');
 const inputScore = document.getElementById('input-score');
 const submit = document.getElementById('submit');
-
 submit.addEventListener('click', () => {
   if (inputName.value !== '' && inputScore.value !== '') {
     newScore(inputName.value, inputScore.value);
@@ -16,6 +15,7 @@ submit.addEventListener('click', () => {
     inputScore.value = '';
   }
 });
-// window.onload {
-//   getAllScores();
-// };
+
+window.onload = function() {
+  getAllScores();
+};

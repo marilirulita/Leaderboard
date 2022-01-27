@@ -1,6 +1,6 @@
 async function getAllScores() {
   const requestURL =
-    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5U9DAd6aBCpR2Ki3cv7X/scores/";
+    "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0CasFsHb7LOJqeFKBD5E/scores/";
   const request = new Request(requestURL);
   const response = await fetch(request);
   const players = await response.json();
