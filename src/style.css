@@ -1,6 +1,7 @@
 body {
   display: flex;
   justify-content: center;
+  font-family: 'Brush Script MT', cursive;
 }
 
 h1 {
@@ -23,7 +24,6 @@ p {
   margin: 0;
   padding: 0;
   color: #212121;
-  font-weight: bold;
 }
 
 input {
@@ -33,6 +33,7 @@ input {
   color: #FFFFFF;
   font-weight: bold;
   border-radius: 7px;
+  font-family: 'Brush Script MT', cursive;
 }
 
 input::placeholder {
@@ -100,10 +101,25 @@ li:nth-child(even) {
 #submit {
   width: min-content;
   align-self: flex-end;
-  height: 31px;
+  height: 35px;
 }
 
 .light-primary-color { 
   background: #FFCDD2; 
   color: #212121;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 10px;
+  }
+  .main-board {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-board {
+    flex-direction: column;
+  }
 }
