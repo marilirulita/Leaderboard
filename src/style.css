@@ -109,6 +109,13 @@ li:nth-child(even) {
   color: #212121;
 }
 
+.fontAwsome {
+  font-size:40px;
+  color:white;
+  text-shadow:2px 2px 4px #757575;
+  margin: 0 15px;
+}
+
 @media only screen and (max-width: 768px) {
   .main {
     padding: 10px;
