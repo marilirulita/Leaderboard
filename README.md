@@ -5,6 +5,10 @@ Leaderboard list app that displays scores submitted by different players. It als
 
 ![](leaderboard-screen.png)
 
+![](mobile-screen.png)
+
+![](mobile-screen2.png)
+
 ## Built With
 
 - Java Script
