@@ -3,7 +3,7 @@ import getAllScores from './score-display.js';
 import newScore from './new-score.js';
 
 const refresh = document.getElementById('refresh');
-refresh.addEventListener('click', () => { getAllScores(); });
+refresh.addEventListener('click', () => getAllScores());
 
 const inputName = document.getElementById('input-name');
 const inputScore = document.getElementById('input-score');
@@ -16,6 +16,4 @@ submit.addEventListener('click', () => {
   }
 });
 
-window.onload = () => {
-  getAllScores();
-};
+window.onload = () => getAllScores();

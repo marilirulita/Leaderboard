@@ -10,13 +10,13 @@ const displayScores = (obj) => {
   });
 };
 
-async function getAllScores() {
+const getAllScores = async () => {
   const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0CasFsHb7LOJqeFKBD5E/scores/';
   const request = new Request(requestURL);
   const response = await fetch(request);
   const players = await response.json();
 
   displayScores(players);
-}
+};
 
 export { getAllScores as default };

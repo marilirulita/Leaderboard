@@ -1,4 +1,4 @@
-async function newScore(name, scr) {
+const newScore = async (name, scr) => {
   const requestURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/0CasFsHb7LOJqeFKBD5E/scores/';
 
   const method = {
@@ -13,6 +13,6 @@ async function newScore(name, scr) {
   };
   const request = new Request(requestURL);
   await fetch(request, method);
-}
+};
 
 export { newScore as default };
