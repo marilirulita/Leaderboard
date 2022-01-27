@@ -24,6 +24,6 @@ const addNewScore = () => {
     inputName.value = '';
     inputScore.value = '';
   }
-}
+};
 
 export { addNewScore as default };
