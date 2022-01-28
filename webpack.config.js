@@ -16,7 +16,7 @@ module.exports = {
     }),
   ],
   output: {
-    publicPath: '/Leaderboard/',
+ //   publicPath: '/Leaderboard/', //use it just for deploy git hub pages
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
