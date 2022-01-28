@@ -7,7 +7,9 @@ Leaderboard list app that displays scores submitted by different players. It als
 
 ![](mobile-screen.png)
 
-![](mobile-screen2.png)
+## Live Demo
+
+[Live Demo Link](https://marilirulita.github.io/Leaderboard/)
 
 ## Built With
 
