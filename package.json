@@ -4,10 +4,11 @@
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,13 +20,14 @@
   "bugs": {
     "url": "https://github.com/marilirulita/Leaderboard/issues"
   },
-  "homepage": "https://github.com/marilirulita/Leaderboard#readme",
+  "homepage": "https://github.com/marilirulita/Leaderboard/",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.4",
+    "gh-pages": "^3.2.3",
     "hint": "^6.1.3",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
@@ -36,8 +38,5 @@
     "webpack": "^5.67.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.3"
-  },
-  "dependencies": {
-    "gh-pages": "^3.2.3"
   }
 }
